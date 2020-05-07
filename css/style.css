@@ -17,7 +17,6 @@
 	}
 	input[type=number] {
   		-moz-appearance: textfield;
-		width: 21em;
 		border: 0.3em black double;
 	}
 	select {
