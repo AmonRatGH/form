@@ -1,0 +1,139 @@
+	body, html {
+  		height: 100%;
+  		margin: 0;
+		background-image: url("../icons/bodybackground.jpg");
+		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		background-attachment: fixed;
+		opacity: 0.9;
+	}
+	* {
+  		box-sizing: border-box;
+	}
+	input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    		-webkit-appearance: none;
+    		margin: 0;
+	}
+	input[type=number] {
+  		-moz-appearance: textfield;
+		width: 21em;
+		border: 0.3em black double;
+	}
+	select {
+   		min-width: 21em;
+		border:0.3em black double;
+    		background-color: rgba(255, 255, 255, 0.3);
+	}
+	input[type=text], input[type=password], input[type=email]{
+		border: 0.3em black double;
+	}
+	.form1{
+		border: 0.25em solid black;
+		width: 40em;
+		margin: auto;
+	}
+	.first{
+		text-align: center;
+		border-top-left-radius: 0.375em;
+		border-top-right-radius: 0.375em;
+		margin-bottom: 0.75em;
+	}
+	textarea{
+		resize: none;
+	}
+	div{
+		border-top: 3.5px dotted black;
+		background-color: white;
+		resize: none;
+  		overflow: auto;
+	}
+	hr{
+		border-top: 0.15em black dotted;
+	}
+	.head1{
+		border: 0.1em solid black;
+		width: 16em;
+		margin: auto;
+		border-width: 0.1em;
+		text-align: center;
+		border-radius: 0.3em;
+		font-size: 2.5em;
+	}
+	.pad{
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+	}
+	.align1{
+		text-align: center;
+	}
+	.align2{
+		margin: auto;
+		text-align: center;
+		padding-bottom: 0.1em;
+		font-size: 1.25em;
+		border: transparent;
+		background-color: transparent !important;
+		color: black;
+	}
+	.align3{
+		padding-left:6em;
+		padding-right:3em;
+	}
+	.form4{
+		border: 0.25em solid black;
+		width: 40em;
+		margin: auto;
+		text-align: center;
+	}
+	.bradius{
+		border-radius: 0.75em;
+		overflow: hidden;
+	}
+	.reddot{
+		vertical-align: super;
+		font-size: smaller;
+		color: red;
+		font-weight: bold;
+	}
+	padupdown{
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+	.row:after{
+  		content: "";
+		display: table;
+  		clear: both;
+	}
+	radioform{
+		padding-left: 1em;
+		padding-right: 1em;	
+	}
+	.spantekst{
+		text-align: center;
+	}
+	#top {
+  		position: fixed;
+  		bottom: 0.5em;
+  		right: 0.5em; 
+  		z-index: 99;
+  		border: none;
+  		background-color: pink;
+  		cursor: pointer;
+  		padding: 1em;
+  		border-radius: 0.7em;
+  		font-size: 1.25em;
+	}
+
+	#top:hover {
+  		opacity: 0.8;
+		filter: alpha(opacity=80);
+	}
+	.submitb{
+		border: 0.2em black double;
+		text-align: center;
+		font-size: 1.5em;
+		margin: 0.2em 0.1em;
+		cursor: pointer;
+		border-radius:0.5em;
+	}

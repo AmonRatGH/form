@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sl">
+	<head>
+		<title>Obrazec</title>
+		<meta charset="UTF-8">
+		<link rel=icon href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/checkbox.js"></script>
+	</head>
+		<body>
+			<div class="head1">
+				<span>Stran za zmenke - Izdelaj Profil</span>
+			</div>
+			<div class="align2" style="pointer-events:none;border-top:none;">
+				<span><b>Kjer je <span class="reddot">*</span> pomeni, da so podatki pomembni in jih je treba vpisati.</b></span><br/>
+			</div>
+			<form name="world">
+			<div class="form1 bradius">
+				<div style="border:none;font-size:1.5em;margin-left:2em;" class="pad align">
+					<span><b>Splošni podatki:</b></span>
+				</div>
+				<div class="pad align3">
+					<span><b>Ime</b><span class="reddot">*</span>: </span>
+					<input type="text" name="Ime" size="35" style="margin-left: 6.2em;" required>
+				</div>
+				<div class="pad align3">
+					<span><b>Priimek</b><span class="reddot">*</span>:</span>
+					<input type="text" name="Priimek" size="35" style="margin-left: 4.1em;" required><br/>
+				</div>
+				<div class="pad align3">
+					<span><b>Starost</b><span class="reddot">*</span>:</span>
+					<input type="number" name="Starost" style="margin-left: 4.6em;" min="18" max="100" required> let<br/>
+				</div>
+				<div class="pad align3">
+					<span><b>Email</b><span class="reddot">*</span>: </span>
+					<input type="email" name="Email" size="35" style="margin-left: 5.2em;" required><br/>
+				</div>
+				<div class="pad align3">
+					<span><b>Spol</b><span class="reddot">*</span>: <br/>
+						<input type="radio" name="spol" value="Moški" required />Moški<br/>
+						<input type="radio" name="spol" value="Ženska" required />Ženska<br/>
+						
+					</span>
+				</div>
+				<div class="pad align3">
+					<span><b>Geslo</b><span class="reddot">*</span>: </span>
+					<input type="password" name="password" size="35" style="margin-left:5.5em;" required><br/>
+					<br/>
+					<span><b>Ponovi Geslo</b><span class="reddot">*</span>: </span>
+					<input type="password" name="repeat_password" size="35" style="margin-left:1.65em;" required><br/>
+				</div>
+				<div class="pad align3">
+					<span><b>Kratek Opis v 500 znakih:</b></span><br/>
+					<textarea rows="13" cols="52" maxlength="500"></textarea>
+				</div>
+				<div class="pad align3">
+					<span style="margin-left:7em;"><b>Kdo ti je všeč?</b><span class="reddot">*</span><br/>
+						<select style="margin-left:9.5em;" required>
+							<option value="" selected>---Izberi---</option>
+							<option value="moški" label="moski">Moški</option>
+							<option value="ženska" label="zenska">Ženska</option>
+							<option value="moškiŽenska" label="oboje" >Moški in Ženska</option>
+						</select><br/>
+					</span>
+				</div>
+			</div>
+			<div class="form1 bradius" style="margin-top:1em;">
+				<div style="border:none;" class="pad align3">
+					<div style="font-size:1.6em;margin-left:-1.6em;border-top:none;"><b>Izgled</b></div><br/>
+					<div style="border-top:none;" ><b>Višina<span class="reddot">*</span></b>:<input style="margin-left: 5.5em;" type="number" name="Visina" min="100" max="250" required /> cm </div><br/>
+					<div style="border-top:none;" class="padupdown"><b>Barva las<span class="reddot">*</span></b>:
+						<select style="margin-left: 3.6em;" name="Barva Las" required >
+							<option value="" selected>---Izberi---</option>
+							<option value="Blond">Blond</option>
+							<option value="Rjava">Rjava</option>
+							<option value="Crna">Črna</option>
+							<option value="Rdeca">Rdeča</option>
+							<option value="Siva">Siva</option>
+							<option value="Barvna">Barvna</option>
+						</select>
+					</div><br/>
+					<div style="border-top:none;" class="padupdown"><b>Tip postave<span class="reddot">*</span></b>:
+						<select style="margin-left: 2.5em;" name="Postava" required >
+							<option value="" selected>---Izberi---</option>
+							<option value="vitek">Vitek</option>
+							<option value="srednji">Srednji</option>
+							<option value="atletski">Atletski</option>
+							<option value="mocnejsi">Močnejši</option>
+						</select>
+					</div>
+					<br/>
+				</div>
+			</div>
+			<div class="align2"><b>&darr;---Izberi največ TRI---&darr;</b></div>
+			<div class="form1 bradius radioform" style="margin-top:1em;">
+				<div style="font-size:1.6em;margin-left:-3.6em;border-top:none;" class="pad align3">
+					<b>Hobiji</b><br/>
+					<div style="font-size:0.7em;margin-left:2em;border-top:none;">
+							<input class="check" type="checkbox" name="Hobiji" value="Sport"/>Šport
+							<input class="check" type="checkbox" name="Hobiji" value="Kuhanje"/>Kuhanje
+							<input class="check" type="checkbox" name="Hobiji" value="Plesanje"/>Plesanje
+							<input class="check" type="checkbox" name="Hobiji" value="Vrtnarjenje"/>Vrtnarjenje
+							<input class="check" type="checkbox" name="Hobiji" value="Risanje"/>Risanje<br/>
+							<input class="check" type="checkbox" name="Hobiji" value="Branje knjig"/>Branje knjig
+							<input class="check" type="checkbox" name="Hobiji" value="Fotografiranje"/>Fotografiranje
+							<input class="check" type="checkbox" name="Hobiji" value="Modelarstvo"/>Modelarstvo<br/>
+							<input class="check" type="checkbox" name="Hobiji" value="Igranje igric"/>Igranje igric
+							<input class="check" type="checkbox" name="Hobiji" value="Glasba"/>Glasba
+							<input class="check" type="checkbox" name="Hobiji" value="Avti"/>Avti
+							<input class="check" type="checkbox" name="Hobiji" value="Motorji"/>Motorji
+					</div>
+				</div>
+			</div>
+			<div class="form1 bradius" style="margin-top:1em;">
+				<div style="font-size:1.6em;margin-left:-3.6em;border-top:none;" class="pad align3">
+					<span><b>Življenski stil</b></span><br/>
+					<span style="font-size: 0.75em;"><b>Kako se oblačiš? </b></span>
+					<div style="font-size:0.9em;margin-left:2em;border-top:none; font-size: 0.7em;">
+						<input type="radio" name="Oblacila" value="Vsakdanje" required />Vsakdanje<br/>
+						<input type="radio" name="Oblacila" value="Trendi" required />Trendi<br/>
+						<input type="radio" name="Oblacila" value="Sportno" required />Športno<br/>
+						<input type="radio" name="Oblacila" value="Alternativno" required />Alternativno<br/>
+						<input type="radio" name="Oblacila" value="Emo" required />Emo<br/>
+						<input type="radio" name="Oblacila" value="Drugo" required />Drugo<br/>
+					</div>
+					<br/>
+					<span style="font-size: 0.75em;"><b>Prehrana? </b></span><br/>
+					<div style="font-size:0.9em;margin-left:2em;border-top:none; font-size: 0.7em;">
+						<input type="radio" name="Prehrana" value="Vsejedec" required />Vsejedec<br/>
+						<input type="radio" name="Prehrana" value="Mesojedec" required />Mesojedec<br/>
+						<input type="radio" name="Prehrana" value="Rastlinojedec" required />Rastlinojedec<br/>
+						<input type="radio" name="Prehrana" value="Vega" required />Vegan<br/>
+						<input type="radio" name="Prehrana" value="Paleo" required />Paleo dieta<br/>
+						<input type="radio" name="Prehrana" value="Keto" required />Keto dieta<br/>
+					</div>
+					<br/>
+					<span style="font-size: 0.75em;"><b>Kadilec? </b></span><br/>
+					<div style="font-size:0.9em;margin-left:2em;border-top:none; font-size: 0.7em;">
+						<input type="radio" name="Kadilec" value="Nekadilec" required />Nekadilec<br/>
+						<input type="radio" name="Kadilec" value="Obcasni kadilec" required />Občasni kadilec<br/>
+						<input type="radio" name="Kadilec" value="Kadilec" required />Kadilec<br/>
+					</div>
+					<br/>
+					<span style="font-size: 0.75em;"><b>Alkohol? </b></span><br/>
+					<div style="font-size:0.9em;margin-left:2em;border-top:none; font-size: 0.7em;">
+						<input type="radio" name="Alkohol" value="Ne" required />Ne pijem alkohola<br/>
+						<input type="radio" name="Alkohol" value="Malo" required />Občasni pijem alkohol s prijatlji<br/>
+						<input type="radio" name="Alkohol" value="Veliko" required />Točim ga več kot vode<br/>
+					</div>
+					<br/>
+					<span style="font-size: 0.75em;"><b>Finančni status </b></span><br/>
+					<div style="font-size:0.9em;margin-left:2em;border-top:none; font-size: 0.7em;">
+						<input type="radio" name="Fstatus" value="Miljonar" required />Milijonar<br/>
+						<input type="radio" name="Fstatus" value="Vec" required />Več kot dovolj<br/>
+						<input type="radio" name="Fstatus" value="dovolj" required />Ravno dovolj<br/>
+						<input type="radio" name="Fstatus" value="Malopremalo" required />Malo zmanjkuje<br/>
+						<input type="radio" name="Fstatus" value="Nic" required />Luknja v denarnici<br/>
+					</div>
+				</div>
+			</div>
+				<div class="pad form1 bradius align3" style="border-top:none;border-top:0.25em black solid;margin-top:1em;">
+					<div class="" style="border-top:none;">
+						<input type="checkbox" name="Strinjanje" value="Se Strinjam" required><b>Strinjam se, da Tenej Muzica lahko to objavlja na internet in deli z prijatelji ali družino.</b><br/>
+					</div>
+				</div>
+				<div class="pad align1 form1 bradius" style="margin-top:1em;">
+					<input type="submit" name="Submit" value="Oddaj" size="6" class="submitb" style="font-size: 1.8em;"/><br/>
+				</div>
+			</form>
+			<script type="text/javascript">
+				checkboxlimit(document.forms.world.Hobiji, 3)
+			</script>
+			<script type="text/javascript" src="js/top.js"></script>
+			<button onclick="topFunction()" id="top" title="Go to top">Top</button> 
+		</body>
+</html>
